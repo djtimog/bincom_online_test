@@ -1,0 +1,5 @@
+make a page that display the reuslt of any polling unit you pick on it
+
+make page that display the result of all polling unit in the selected local government
+
+make a page that display each party and their result for the selected polling unit

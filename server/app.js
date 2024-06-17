@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 
-const server = require('./server');
+const dbService = require('./server');
 
 
 app.use(cors());
@@ -15,9 +15,10 @@ app.use(express.urlencoded({ extended : false}));
 
 // read
 app.get("/getAll", (request, response) =>{
-    response.json({
-        sucess: true
-    })
+
+    const db = server.getDbServiceInstance();
+    const result = db.getAllData();
+    
 });
 
 
